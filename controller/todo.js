@@ -110,7 +110,6 @@ exports.list = async (obj, args, context, info) => {
   if (decoded) {
     try {
       var result = await todoSchema.find();
-      console.log(result, 'resultlksdvnvnb');
       if (result != null && result.n > 0) {
         msg.msg = 'succeed';
         msg.data = result;
